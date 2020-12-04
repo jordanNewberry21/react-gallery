@@ -9,15 +9,18 @@
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+main {
+  padding: 2em;;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.image {
+  border: 1px solid darkblue;
+  border-radius: .5em;
+  display: inline-block;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+  padding: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }

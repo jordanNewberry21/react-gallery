@@ -1,7 +1,7 @@
-- [] Make a template component
+- [x] Make a template component
 - [x] npm install stuff
-- [] bring in css from hero assignment to display images as cards
-- [] add some test images to gallery.data to work with display
+- [x] bring in css from hero assignment to display images as cards
+- [x] add some test images to gallery.data to work with display
 
 
 - [] 3 Components
@@ -9,6 +9,11 @@
     - [] contains STATE
         - [] empty array to put in data from gallery.data
         - [] send state / array to GalleryList as props
+    - [] componentDidMount calls getImages function
+        - [] getImages has the axios.get route, grabbing the stuff stored in gallery.data
+    - [] there should also be a PUT route here that connects to the one in gallery.router
+        - [] this PUT route should be passed a prop function down to the GalleryItem child
+             for the 'like' button
     - [] GalleryList.js
         - [] use props from app.js with a .map() to iterate over array
         - [] send each iteration to GalleryItem component as props
