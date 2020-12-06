@@ -18,7 +18,7 @@ class GalleryItem extends Component{
             <>
             <div onClick={this.toggleDescription} className="image" key={this.props.image.id}>
                 {this.state.description ?
-                    <p>{this.props.image.description}</p> :
+                    <h3>{this.props.image.description}</h3> :
             
                     <img src={this.props.image.path} alt={this.props.image.description}></img>
                  }
