@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
+import GalleryList from '../GalleryList/GalleryList'
 
 class App extends Component {
   state = {
@@ -35,6 +36,7 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br/>
+        <GalleryList images={this.state.imageList}/>
         <p>{JSON.stringify(this.state.imageList)}</p>
       </div>
     );
