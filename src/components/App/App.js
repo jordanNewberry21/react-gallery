@@ -36,7 +36,7 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br/>
-        <GalleryList images={this.state.imageList}/>
+        <GalleryList imageList={this.state.imageList}/>
         <p>{JSON.stringify(this.state.imageList)}</p>
       </div>
     );

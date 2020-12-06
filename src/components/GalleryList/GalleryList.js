@@ -6,7 +6,10 @@ class GalleryList extends Component{
         return(
             <div>
                 <h2>hello from GalleryList component</h2>
-                <GalleryItem />
+                {/* using props from app.js to map over images */}
+                {this.props.imageList.map(image => 
+                <GalleryItem image={image} key={image.id}/>
+                               )}
             </div>
         ) // end return
     } // end render
