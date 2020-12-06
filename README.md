@@ -5,7 +5,7 @@
 
 # Project Name
 
-I decided to call this project `a Wedding Story`. It is a simple little image gallery app I created for my wife. It tells a short story about us and our wedding, with a heart button to show that you like the image. There are also optional descriptions on the images that can be seen just by clicking on them. I just wanted a nice way to show my wife how much I appreciate everything she does while I am attending my full-stack boot camp at [Prime Digital Academy](https://primeacademy.io/).
+I decided to call this project *a Wedding Story*. It is a simple little image gallery app I created for my wife. It tells a short story about us and our wedding, with a heart button to show that you like the image. There are also optional descriptions on the images that can be seen just by clicking on them. I just wanted a nice way to show my wife how much I appreciate everything she does while I am attending my full-stack boot camp at [Prime Digital Academy](https://primeacademy.io/).
 
 ## Start Up
 
