@@ -15,9 +15,19 @@ class GalleryItem extends Component{
 
     render(){
         return(
+            <>
             <div onClick={this.toggleDescription} className="image" key={this.props.image.id}>
-                <img src={this.props.image.path}></img>
+                {this.state.description ?
+                    <p>{this.props.image.description}</p> :
+            
+                    <img src={this.props.image.path}></img>
+                 }
+                <p>Likes: {this.props.image.likes}</p>
             </div>
+            <div>
+                <button onClick={(event) => this.props.addLikes(event, this.props.image.id)}>Like</button>
+            </div>
+            </>
         ) // end return
     } // end render
 } // end class

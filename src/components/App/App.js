@@ -28,6 +28,19 @@ class App extends Component {
     })
   }
 
+  addLikes = (event, id) => { // the event was pressed 'onClick' and the id is passed in
+    console.log('id is...', id);
+    axios.put(`/like/${id}`) // the id is sent as the params to the server-side
+    .then( (response) => {
+      console.log('Response:', response); // we get an OK back from the DB that it was updated
+      this.getImages() // call getImages again to update the DOM
+    })
+    .catch( (error)=> {
+      alert('Something bad happened');
+      console.log('Error', error)
+    })
+  }
+
 
   render() {
     return (
@@ -36,7 +49,7 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br/>
-        <GalleryList imageList={this.state.imageList}/>
+        <GalleryList addLikes={this.addLikes} imageList={this.state.imageList}/>
         <p>{JSON.stringify(this.state.imageList)}</p>
       </div>
     );
