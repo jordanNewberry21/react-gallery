@@ -20,12 +20,13 @@ class GalleryItem extends Component{
                 {this.state.description ?
                     <p>{this.props.image.description}</p> :
             
-                    <img src={this.props.image.path}></img>
+                    <img src={this.props.image.path} alt={this.props.image.description}></img>
                  }
-                <p>Likes: {this.props.image.likes}</p>
             </div>
             <div>
-                <button onClick={(event) => this.props.addLikes(event, this.props.image.id)}>Like</button>
+                <p>&#10084; {this.props.image.likes}</p>
+                <button onClick={(event) => this.props.addLikes(event, this.props.image.id)}>&#10084;</button>
+                
             </div>
             </>
         ) // end return

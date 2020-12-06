@@ -5,16 +5,42 @@
 .App-header {
   background-color: #222;
   height: 70px;
-  padding: 20px;
+  padding: 2rem;
   color: white;
+  
+}
+
+.App-title {
+  color: white;
+  Font-Family: 'Cormorant Garamond', Serif;
+  Font-Size: 55px;
+  line-height: 10px;
 }
 
 main {
-  padding: 2em;;
+  padding: 2em;
+  
+}
+
+body {
+  Font-Family: 'Fira Sans', Sans-Serif;
+  Font-Size: 15px;
+}
+
+button {
+  margin-bottom: 1rem;
+  color: rgb(234, 20, 20);
+  background-color: white;
+  border: 1px solid whitesmoke;
+  border-radius: .5em;
+}
+
+p {
+  color: rgb(223, 13, 13);
 }
 
 .image {
-  border: 1px solid darkblue;
+  border: 1px solid whitesmoke;
   border-radius: .5em;
   display: inline-block;
   width: 300px;
@@ -23,6 +49,10 @@ main {
   padding: 1em;
   margin-right: 1em;
   margin-bottom: 1em;
+  background-color: #222;
+  color: white;
+  Font-Family: 'Fira Sans', Sans-Serif;
+  Font-Size: 15px;
   
 }
 
