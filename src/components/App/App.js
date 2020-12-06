@@ -30,7 +30,7 @@ class App extends Component {
 
   addLikes = (event, id) => { // the event was pressed 'onClick' and the id is passed in
     console.log('id is...', id);
-    axios.put(`/like/${id}`) // the id is sent as the params to the server-side
+    axios.put(`/gallery/like/${id}`) // the id is sent as the params to the server-side
     .then( (response) => {
       console.log('Response:', response); // we get an OK back from the DB that it was updated
       this.getImages() // call getImages again to update the DOM
