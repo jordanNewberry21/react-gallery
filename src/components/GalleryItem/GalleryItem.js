@@ -25,7 +25,7 @@ class GalleryItem extends Component{
             </div>
             <div>
                 <p>&#10084; {this.props.image.likes}</p>
-                <button onClick={(event) => this.props.addLikes(event, this.props.image.id)}>&#10084;</button>
+                <button className="heartBtn"onClick={(event) => this.props.addLikes(event, this.props.image.id)}>&#10084;</button>
                 
             </div>
             </>

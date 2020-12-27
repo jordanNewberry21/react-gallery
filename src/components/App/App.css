@@ -35,6 +35,11 @@ button {
   border-radius: .5em;
 }
 
+.heartBtn:hover {
+  transform: scale(2);
+  transition-duration: 0.5s;
+}
+
 p {
   color: rgb(223, 13, 13);
 }
@@ -51,9 +56,11 @@ p {
   margin-bottom: 1em;
   background-color: #222;
   color: white;
-  Font-Family: 'Fira Sans', Sans-Serif;
-  Font-Size: 15px;
   
+}
+
+.image:hover {
+  opacity: 0.3;
 }
 
 img {
